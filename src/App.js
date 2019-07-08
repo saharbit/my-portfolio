@@ -1,6 +1,6 @@
 import React from "react";
 import sb from "./assets/sb.png";
-import "./App.css";
+import "./App.scss";
 import SocialLinks from "./components/SocialLinks";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="app">
       <img src={sb} className="logo" alt="logo" />
 
-      <div className="flex flex-col flex-3 justify-center upper-container">
+      <div className="container mx-auto flex flex-col flex-3 justify-center">
         <h1>HEY, I'M</h1>
 
         <h1 className="h1-border">SAHAR</h1>
@@ -28,8 +28,8 @@ function App() {
           <h2>MY PROJECTS</h2>
           <div className="hr" />
         </div>
-        <div className="flex-1 bg-black" />
-        <div className="flex-3 bg-grey" />
+        <div className="flex-1 bg-black hidden lg:flex" />
+        <div className="flex-3 bg-grey hidden lg:flex"/>
       </div>
     </div>
   );

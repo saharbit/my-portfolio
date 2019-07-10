@@ -1,0 +1,43 @@
+.carousel-width {
+  width: 400px;
+}
+
+.slick-prev {
+  left: -75px;
+  width: 50px;
+  height: 50px;
+}
+
+.slick-next {
+  right: -75px;
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-item {
+  background-color: white;
+  padding: 12px;
+  display: flex !important;
+}
+
+.carousel-image {
+  width: 40%;
+}
+
+.project-name {
+  color: black;
+  font-size: 18px;
+}
+
+.project-description {
+  font-size: 16px;
+}
+
+.github-link {
+  margin-left: 185px;
+  margin-top: 60px;
+  width: 28px;
+  height: 28px;
+  stroke: black;
+  border: 2px solid black;
+}

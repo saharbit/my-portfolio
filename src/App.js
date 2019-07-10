@@ -1,35 +1,47 @@
 import React from "react";
-import sb from "./assets/sb.png";
 import "./App.scss";
 import SocialLinks from "./components/SocialLinks";
+import TechIcons from "./components/TechIcons";
+import ProjectsCarousel from "./components/ProjectsCarousel";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="app">
-      <img src={sb} className="logo" alt="logo" />
+      <div className="flex flex-row justify-between p-8">
+        <Header />
+      </div>
 
-      <div className="container mx-auto flex flex-col flex-3 justify-center">
-        <h1>HEY, I'M</h1>
+      <div className="container mx-auto flex flex-row flex-3">
+        <div className="flex flex-col flex-1 justify-center p-2">
+          <h1>HEY, I'M</h1>
 
-        <h1 className="h1-border">SAHAR</h1>
+          <h1 className="h1-border">SAHAR</h1>
 
-        <div className="flex flex-row items-center mt-3">
-          <h2>LET'S STAY IN TOUCH</h2>
-          <div className="hr" />
+          <div className="flex flex-row items-center mt-3">
+            <h2>LET'S STAY IN TOUCH</h2>
+            <div className="hr" />
+          </div>
+
+          <div className="flex flex-row items-center mt-4">
+            <SocialLinks />
+          </div>
         </div>
 
-        <div className="flex flex-row items-center mt-4">
-          <SocialLinks />
+        <div className="hidden lg:flex flex-1 flex-col justify-center items-center">
+          <TechIcons />
         </div>
       </div>
 
       <div className="flex flex-1">
-        <div className="flex flex-row flex-2 items-center justify-center bg-orange">
+        <div className="flex flex-row flex-3 items-center justify-center bg-orange">
           <h2>MY PROJECTS</h2>
           <div className="hr" />
         </div>
         <div className="flex-1 bg-black hidden lg:flex" />
-        <div className="flex-3 bg-grey hidden lg:flex"/>
+        <div className="flex-3 bg-grey hidden lg:flex items-center justify-center">
+          <ProjectsCarousel />
+        </div>
       </div>
     </div>
   );

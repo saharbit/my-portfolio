@@ -2,7 +2,6 @@ import React from "react";
 import "./App.scss";
 import SocialLinks from "./components/SocialLinks";
 import TechIcons from "./components/TechIcons";
-import ProjectsCarousel from "./components/ProjectsCarousel";
 import Header from "./components/Header";
 
 function App() {
@@ -39,9 +38,7 @@ function App() {
           <div className="hr" />
         </div>
         <div className="flex-1 bg-black hidden lg:flex" />
-        <div className="flex-3 bg-grey hidden lg:flex items-center justify-center">
-          <ProjectsCarousel />
-        </div>
+        <div className="flex-3 bg-grey hidden lg:flex items-center justify-center" />
       </div>
     </div>
   );

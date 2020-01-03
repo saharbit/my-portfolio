@@ -2,14 +2,13 @@ import React from "react";
 import "./App.scss";
 import SocialLinks from "./components/SocialLinks";
 import TechIcons from "./components/TechIcons";
-import Header from "./components/Header";
 
 function App() {
   return (
     <div className="app">
-      <div className="flex flex-row justify-between p-8">
-        <Header />
-      </div>
+      {/*<div className="flex flex-row justify-between p-8">*/}
+      {/*<Header />*/}
+      {/*</div>*/}
 
       <div className="container mx-auto flex flex-row flex-3">
         <div className="flex flex-col flex-1 justify-center p-2">
@@ -32,14 +31,14 @@ function App() {
         </div>
       </div>
 
-      <div className="flex flex-1">
-        <div className="flex flex-row flex-3 items-center justify-center bg-orange">
-          <h2>MY PROJECTS</h2>
-          <div className="hr" />
-        </div>
-        <div className="flex-1 bg-black hidden lg:flex" />
-        <div className="flex-3 bg-grey hidden lg:flex items-center justify-center" />
-      </div>
+      {/*<div className="flex flex-1">*/}
+      {/*  <div className="flex flex-row flex-3 items-center justify-center bg-orange">*/}
+      {/*    <h2>MY PROJECTS</h2>*/}
+      {/*    <div className="hr" />*/}
+      {/*  </div>*/}
+      {/*  <div className="flex-1 bg-black hidden lg:flex" />*/}
+      {/*  <div className="flex-3 bg-grey hidden lg:flex items-center justify-center" />*/}
+      {/*</div>*/}
     </div>
   );
 }

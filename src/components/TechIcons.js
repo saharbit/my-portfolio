@@ -11,7 +11,7 @@ import { ReactComponent as JavascriptLogo } from "../assets/javascript-original.
 
 const TechIcons = () => {
   return (
-    <>
+    <div className="flex flex-col items-center">
       <div className="flex">
         <ReactLogo className="tech-icon animate" />
         <VueLogo className="tech-icon" />
@@ -27,7 +27,7 @@ const TechIcons = () => {
         <NodeLogo className="tech-icon" />
         <JavascriptLogo className="tech-icon" />
       </div>
-    </>
+    </div>
   );
 };
 

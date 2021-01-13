@@ -2,12 +2,14 @@ import React from "react";
 import "./App.scss";
 import SocialLinks from "./components/SocialLinks";
 import TechIcons from "./components/TechIcons";
+import sahar from "./assets/sahar.jpg";
 
 function App() {
     return (
-        <div className="app justify-center">
+        <div className="app flex flex-col justify-center pt-6 min-h-screen">
             <div className="container mx-auto flex flex-col px-2">
                 <div className="flex flex-col flex-1 items-center">
+                    <img src={sahar} alt="sahar" className="sahar" />
                     <h1>HEY, I'M</h1>
                     <h1 className="h1-border">SAHAR</h1>
                     <div className="flex flex-row items-center mt-3">

@@ -1,26 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import About from "./tabs/About";
 import "./App.scss";
-import SocialLinks from "./components/SocialLinks";
-import TechIcons from "./components/TechIcons";
-import sahar from "./assets/sahar.jpg";
+import Projects from "./tabs/Projects";
+import Tools from "./tabs/Tools";
+import { TABS } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 function App() {
+    const [tab, setTab] = useState(TABS.ABOUT);
+
     return (
-        <div className="app flex flex-col justify-center pt-6 min-h-screen">
-            <div className="container mx-auto flex flex-col px-2">
-                <div className="flex flex-col flex-1 items-center">
-                    <img src={sahar} alt="sahar" className="sahar" />
-                    <h1>HEY, I'M</h1>
-                    <h1 className="h1-border">SAHAR</h1>
-                    <div className="flex flex-row items-center mt-3">
-                        <h2>A SOFTWARE DEVELOPER</h2>
-                    </div>
-                    <div className="flex flex-row items-center my-4">
-                        <SocialLinks />
-                    </div>
-                </div>
-                <TechIcons />
-            </div>
+        <div className="linear-background flex flex-col items-center p-5 h-screen w-full">
+            <Navbar setTab={setTab} tab={tab} />
+            {tab === TABS.ABOUT && <About />}
+            {tab === TABS.PROJECTS && <Projects />}
+            {tab === TABS.TOOLS && <Tools />}
         </div>
     );
 }

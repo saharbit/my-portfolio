@@ -10,11 +10,13 @@ function App() {
   const [tab, setTab] = useState(TABS.ABOUT);
 
   return (
-    <div className="linear-background flex flex-col items-center p-5 h-screen w-full">
-      <Navbar setTab={setTab} tab={tab} />
-      {tab === TABS.ABOUT && <About />}
-      {tab === TABS.PROJECTS && <Projects />}
-      {tab === TABS.TOOLS && <Tools />}
+    <div className="linear-background p-5 h-screen">
+      <div className="flex flex-col items-center max-w-md mx-auto">
+        <Navbar setTab={setTab} tab={tab} />
+        {tab === TABS.ABOUT && <About />}
+        {tab === TABS.PROJECTS && <Projects />}
+        {tab === TABS.TOOLS && <Tools />}
+      </div>
     </div>
   );
 }

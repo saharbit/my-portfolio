@@ -9,7 +9,7 @@ const PROJECTS = [
   },
   {
     name: "vue-portfolio-visualizer",
-    github: "https://github.com/saharbit/vue-portfolio-visualizer",
+    github: "https://github.com/saharbit/vue-stocks-visualizer",
   },
   {
     name: "my-portfolio",
@@ -21,12 +21,14 @@ export default function Projects() {
   return (
     <div className="w-full">
       {PROJECTS.map((project) => (
-        <a href={project.github}>
-          <div className="flex flex-row justify-between items-center w-full border-2 border-white rounded-xl p-4 mb-4 cursor-pointer hover:opacity-50 duration-200">
-            <div className="text-white font-bold">{project.name}</div>
-            <Github />
-          </div>
-        </a>
+        <div className="mb-4">
+          <a href={project.github}>
+            <div className="flex flex-row justify-between items-center w-full border-2 border-white rounded-xl p-4 cursor-pointer hover:opacity-50 duration-200">
+              <div className="text-white font-bold">{project.name}</div>
+              <Github />
+            </div>
+          </a>
+        </div>
       ))}
     </div>
   );

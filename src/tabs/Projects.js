@@ -12,6 +12,10 @@ const PROJECTS = [
     github: "https://github.com/saharbit/you-vs-spy",
   },
   {
+    name: "sportfeed",
+    github: "https://github.com/saharbit/sportfeed",
+  },
+  {
     name: "vue-portfolio-visualizer",
     github: "https://github.com/saharbit/vue-stocks-visualizer",
   },

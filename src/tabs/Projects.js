@@ -4,23 +4,28 @@ import { ReactComponent as Github } from "../assets/github.svg";
 
 const PROJECTS = [
   {
-    name: "livescores",
+    name: "Highlights Feed",
+    github: "https://highlights-feed.vercel.app/",
+    className: "highlights",
+  },
+  {
+    name: "Livescores",
     github: "https://github.com/saharbit/livescores",
   },
   {
-    name: "you-vs-spy",
+    name: "You VS SPY",
     github: "https://github.com/saharbit/you-vs-spy",
   },
   {
-    name: "sportfeed",
+    name: "Sportfeed",
     github: "https://github.com/saharbit/sportfeed",
   },
   {
-    name: "vue-portfolio-visualizer",
+    name: "Vue Portfolio Visualizer",
     github: "https://github.com/saharbit/vue-stocks-visualizer",
   },
   {
-    name: "my-portfolio",
+    name: "My portfolio",
     github: "https://github.com/saharbit/my-portfolio",
   },
 ];
@@ -29,14 +34,16 @@ export default function Projects() {
   return (
     <div className="w-full">
       {PROJECTS.map((project) => (
-        <div className="mb-4">
-          <a href={project.github}>
-            <div className="flex flex-row justify-between items-center w-full border-2 border-white rounded-xl p-4 cursor-pointer hover:opacity-50 duration-200">
-              <div className="text-white font-bold">{project.name}</div>
+        <a href={project.github}>
+          <div
+            className={`mb-4 flex flex-row justify-between items-center w-full border-2 border-white rounded-full md:hover:opacity-50 transition-all`}
+          >
+            <div className="text-white font-bold pl-5">{project.name}</div>
+            <div className="border-l-2 border-white p-4">
               <Github />
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       ))}
     </div>
   );

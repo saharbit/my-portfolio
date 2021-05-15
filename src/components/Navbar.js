@@ -3,7 +3,6 @@ import React from "react";
 export const TABS = {
   ABOUT: "ABOUT",
   PROJECTS: "PROJECTS",
-  TOOLS: "TOOLS",
 };
 
 export default function Navbar({ setTab, tab }) {

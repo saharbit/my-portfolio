@@ -6,27 +6,37 @@ const PROJECTS = [
   {
     name: "Highlights Feed",
     web: "https://highlights-feed.vercel.app/",
-    className: "highlights",
+    github: "https://github.com/saharbit/highlights-feed",
   },
   {
     name: "Livescores",
     web: "https://livescoresapp.netlify.app/",
+    github: "https://github.com/saharbit/livescores",
   },
   {
     name: "You VS SPY",
     web: "https://you-vs-spy.netlify.app/",
+    github: "https://github.com/saharbit/you-vs-spy",
   },
   {
     name: "Sportfeed",
     web: "https://github.com/saharbit/sportfeed",
+    github: "https://github.com/saharbit/sportfeed",
   },
   {
-    name: "Vue Portfolio Visualizer",
-    web: "https://github.com/saharbit/vue-stocks-visualizer",
+    name: "vue-portfolio-visualizer",
+    web: "https://stockspie-21796.web.app/",
+    github: "https://github.com/saharbit/vue-stocks-visualizer",
   },
   {
-    name: "My portfolio",
-    web: "https://github.com/saharbit/my-portfolio",
+    name: "Web portfolio",
+    web: "https://saharbit.dev/",
+    github: "https://github.com/saharbit/my-portfolio",
+  },
+  {
+    name: "Podcast browser",
+    web: "https://github.com/saharbit/podcast-browser",
+    github: "https://github.com/saharbit/podcast-browser",
   },
 ];
 
@@ -34,15 +44,15 @@ export default function Projects() {
   return (
     <div className="w-full">
       {PROJECTS.map((project) => (
-        <div className="mb-4">
-          <a href={project.web}>
-            <div
-              className={`flex flex-row justify-between items-center w-full border-2 border-white rounded-full md:hover:opacity-50 transition-all`}
-            >
-              <div className="text-white font-bold pl-5">{project.name}</div>
-              <div className="border-l-2 border-white p-4">
-                <Github />
-              </div>
+        <div className="flex mb-4 w-full">
+          <a href={project.web} className="w-full">
+            <div className="cursor-pointer md:hover:opacity-50 transition-all border-white border-2 h-12 flex items-center pl-4 py-8 w-full rounded-l-full border-r-0">
+              <span className="text-white font-bold">{project.name}</span>
+            </div>
+          </a>
+          <a href={project.github}>
+            <div className="cursor-pointer md:hover:opacity-50 transition-all border-white border-2 h-12 flex items-center pl-4 pr-5 py-8 rounded-r-full">
+              <Github />
             </div>
           </a>
         </div>

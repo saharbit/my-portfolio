@@ -5,7 +5,11 @@ import SocialLinks from "../components/SocialLinks";
 export default function About() {
   return (
     <div className="flex flex-col items-center">
-      <img src={sahar} alt="sahar" className="sahar" />
+      <img
+        src={sahar}
+        alt="sahar"
+        className="h-48 rounded-full shadow-xl border"
+      />
       <div className="flex flex-col items-center mt-6 mb-2">
         <h1>HEY, I'M</h1>
         <h1 className="h1-border mb-2">SAHAR</h1>

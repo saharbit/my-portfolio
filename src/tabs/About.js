@@ -10,10 +10,11 @@ export default function About() {
         alt="sahar"
         className="h-48 rounded-full shadow-xl border"
       />
-      <div className="flex flex-col items-center mt-6 mb-2">
-        <h1>HEY, I'M</h1>
-        <h1 className="h1-border mb-2">SAHAR</h1>
-        <h2>A SOFTWARE DEVELOPER</h2>
+      <div className="flex flex-col items-center mt-4 mb-6">
+        <h1 className="h1-border">HEY, I'M</h1>
+        <h1>SAHAR</h1>
+        <h2>FULL STACK</h2>
+        <h2 className="sub-border">SOFTWARE DEVELOPER</h2>
       </div>
       <SocialLinks />
     </div>

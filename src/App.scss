@@ -28,7 +28,7 @@ h2 {
 .h1-border {
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px white;
-  margin-top: -30px;
+  margin-bottom: -40px;
 }
 
 .icon {
@@ -40,4 +40,8 @@ h2 {
     opacity: 0.7;
     cursor: pointer;
   }
+}
+
+.sub-border {
+  margin-top: -10px;
 }

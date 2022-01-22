@@ -1,6 +1,6 @@
 import React from "react";
-import sahar from "../assets/sahar.jpg";
-import SocialLinks from "../components/SocialLinks";
+import sahar from "../../assets/sahar.jpg";
+import SocialLinks from "../../ui/SocialLinks";
 
 export default function About() {
   return (

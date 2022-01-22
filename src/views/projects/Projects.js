@@ -1,13 +1,13 @@
 import React from "react";
 import "./Projects.scss";
-import { ReactComponent as Github } from "../assets/github.svg";
+import { ReactComponent as Github } from "../../assets/github.svg";
 import { PROJECTS } from "./constants";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="divide-y divide-solid">
       {PROJECTS.map((project) => (
-        <div className="flex flex-col p-2">
+        <div className="flex flex-col px-2 py-4">
           <a
             href={project.web}
             className="flex flex-col md:hover:opacity-50 transition-all cursor-pointer"

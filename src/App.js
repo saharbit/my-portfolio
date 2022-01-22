@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import About from "./tabs/About";
+import About from "./views/about/About";
+import Projects from "./views/projects/Projects";
+import { TABS } from "./ui/Navbar";
+import Navbar from "./ui/Navbar";
 import "./App.scss";
-import Projects from "./tabs/Projects";
-import { TABS } from "./components/Navbar";
-import Navbar from "./components/Navbar";
 
 function App() {
   const [tab, setTab] = useState(TABS.ABOUT);

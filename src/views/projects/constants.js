@@ -1,5 +1,11 @@
 export const PROJECTS = [
   {
+    name: "Arc Avatar",
+    web: "https://arc-avatar.vercel.app/",
+    github: "https://github.com/saharbit/arc-web",
+    description: "Generate a custom avatar",
+  },
+  {
     name: "Highlights Feed",
     web: "https://highlights-feed.vercel.app/",
     github: "https://github.com/saharbit/highlights-feed",

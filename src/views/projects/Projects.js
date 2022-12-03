@@ -1,29 +1,13 @@
 import React from "react";
 import "./Projects.scss";
-import { ReactComponent as Github } from "../../assets/github.svg";
 import { PROJECTS } from "./constants";
+import Project from "./Project";
 
 export default function Projects() {
   return (
     <div className="divide-y divide-solid">
       {PROJECTS.map((project) => (
-        <div className="flex flex-col px-2 py-4">
-          <a
-            href={project.web}
-            className="flex flex-col md:hover:opacity-50 transition-all cursor-pointer"
-          >
-            <span className="text-gray-50 font-bold">{project.name}</span>
-            <span className="text-gray-100 text-sm">{project.description}</span>
-          </a>
-          <a
-            href={project.github}
-            className="w-5 md:hover:opacity-50 transition-all"
-          >
-            <div className="flex">
-              <Github />
-            </div>
-          </a>
-        </div>
+        <Project project={project} />
       ))}
     </div>
   );

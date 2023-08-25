@@ -7,6 +7,7 @@ export default function Project({ project }) {
     <div className="flex flex-col px-2 pt-4 pb-2">
       <a
         href={project.web}
+        target="_blank"
         className="flex flex-col md:hover:opacity-50 transition-all cursor-pointer mb-2"
       >
         <div className="flex items-center">

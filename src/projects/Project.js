@@ -10,9 +10,9 @@ export default function Project({ project }) {
         className="flex flex-col md:hover:opacity-50 cursor-pointer mb-2"
       >
         <div className="flex items-center">
-          <span className="font-semibold mr-2">{project.name}</span>
+          <span className="font-semibold mr-2 text-sm">{project.name}</span>
         </div>
-        <span className="text-sm">{project.description}</span>
+        <span className="text-xs">{project.description}</span>
       </a>
     </div>
   );

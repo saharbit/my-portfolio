@@ -3,6 +3,7 @@ import Projects from "./projects/Projects";
 import "./App.scss";
 import Sahar from "./assets/sahar_cropped.jpg";
 import Link from "./Link";
+import Check from "./assets/check.png";
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
           alt="sahar"
           className="profile-picture mb-4 rounded-full"
         />
-        <div className="font-bold header">Sahar Biton</div>
+        <div className="font-bold header flex items-center">
+          Sahar Biton
+          <img src={Check} alt="check" className="w-5 h-5 ml-1" />
+        </div>
         <div>@saharbit • Software Engineer • Tel Aviv</div>
         <Links />
         <div className="mt-4">
@@ -22,7 +26,7 @@ function App() {
             GetAI
           </Link>
         </div>
-        <h2 className="mt-12">Projects</h2>
+        <div className="mt-12 font-bold text-lg">Projects</div>
         <Projects />
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Projects from "./projects/Projects";
 import "./App.scss";
 import Sahar from "./assets/sahar_cropped.jpg";
 import Link from "./Link";
@@ -26,8 +25,6 @@ function App() {
             GetAI
           </Link>
         </div>
-        <div className="mt-12 font-bold text-lg">Projects</div>
-        <Projects />
       </div>
     </div>
   );

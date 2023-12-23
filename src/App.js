@@ -1,8 +1,8 @@
-import React from "react";
 import "./App.scss";
 import Sahar from "./assets/sahar_cropped.jpg";
 import Link from "./Link";
 import Check from "./assets/check.png";
+import Links from "./Links";
 
 function App() {
   return (
@@ -19,10 +19,20 @@ function App() {
         </div>
         <div>@saharbit • Software Engineer • Tel Aviv</div>
         <Links />
-        <div className="mt-4">
+        <div className="my-5">
           Currently hacking at{" "}
           <Link href="https://www.getaivalue.com/" target="_blank">
             GetAI
+          </Link>
+        </div>
+        <div className="text-sm">
+          •{" "}
+          <Link href="https://arc-avatar.vercel.app/" target="_blank">
+            Arc
+          </Link>
+          <br />•{" "}
+          <Link href="https://highlights-feed.vercel.app/" target="_blank">
+            Highlights
           </Link>
         </div>
       </div>
@@ -31,24 +41,3 @@ function App() {
 }
 
 export default App;
-
-function Links() {
-  return (
-    <div>
-      <Link href="https://www.linkedin.com/in/saharbit/" target="_blank">
-        LinkedIn
-      </Link>{" "}
-      •{" "}
-      <Link href="https://github.com/saharbit" target="_blank">
-        GitHub
-      </Link>{" "}
-      •{" "}
-      <Link
-        href="https://gibush.fra1.cdn.digitaloceanspaces.com/resume.pdf"
-        target="_blank"
-      >
-        Resume
-      </Link>{" "}
-    </div>
-  );
-}

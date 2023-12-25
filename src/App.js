@@ -7,11 +7,11 @@ import Links from "./Links";
 function App() {
   return (
     <div className="pt-4 min-h-screen px-4 bg-gray-50">
-      <div className="flex flex-col max-w-md">
+      <div className="flex flex-col">
         <img
           src={Sahar}
           alt="sahar"
-          className="profile-picture mb-4 rounded-full"
+          className="profile-picture mb-2 rounded-full"
         />
         <div className="font-bold header flex items-center">
           Sahar Biton
@@ -19,20 +19,21 @@ function App() {
         </div>
         <div>@saharbit • Software Engineer • Tel Aviv</div>
         <Links />
-        <div className="my-5">
+        <div className="mt-2 mb-6">
           Currently hacking at{" "}
           <Link href="https://www.getaivalue.com/" target="_blank">
             GetAI
           </Link>
         </div>
+        <div className="font-semibold">Public Work</div>
         <div className="text-sm">
           •{" "}
-          <Link href="https://arc-avatar.vercel.app/" target="_blank">
-            Arc
+          <Link href="https://highlights-feed.vercel.app/" target="_blank">
+            Highlights Feed
           </Link>
           <br />•{" "}
-          <Link href="https://highlights-feed.vercel.app/" target="_blank">
-            Highlights
+          <Link href="https://arc-avatar.vercel.app/" target="_blank">
+            Arc Avatar
           </Link>
         </div>
       </div>

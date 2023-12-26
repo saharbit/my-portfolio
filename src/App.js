@@ -11,7 +11,7 @@ function App() {
         <img
           src={Sahar}
           alt="sahar"
-          className="profile-picture mb-2 rounded-full shadow-md"
+          className="profile-picture mb-2 rounded-full shadow-xl"
         />
         <div className="font-bold header flex items-center">
           Sahar Biton

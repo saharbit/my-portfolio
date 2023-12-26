@@ -6,12 +6,12 @@ import Links from "./Links";
 
 function App() {
   return (
-    <div className="pt-4 min-h-screen px-4 bg-gray-50">
+    <div className="p-6 min-h-screen bg-gray-100">
       <div className="flex flex-col">
         <img
           src={Sahar}
           alt="sahar"
-          className="profile-picture mb-2 rounded-full"
+          className="profile-picture mb-2 rounded-full shadow-md"
         />
         <div className="font-bold header flex items-center">
           Sahar Biton
@@ -19,7 +19,7 @@ function App() {
         </div>
         <div>@saharbit • Software Engineer • Tel Aviv</div>
         <Links />
-        <div className="mt-2 mb-6">
+        <div className="mt-2 mb-8">
           Currently hacking at{" "}
           <Link href="https://www.getaivalue.com/" target="_blank">
             GetAI
